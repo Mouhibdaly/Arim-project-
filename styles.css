@@ -55,19 +55,31 @@ h1 {
     color: white;
 }
 
-
 @keyframes handwriting {
-    0% {
-        content: '';
+    from {
+        width: 0;
     }
-    100% {
-        content: 'A';
+    to {
+        width: 100%;
     }
 }
 
-.handwritten::after {
-    content: 'Are you Rimy?';
-    display: inline-block;
+.handwritten {
     overflow: hidden;
-    animation: handwriting 4s steps(16) infinite;
+    white-space: nowrap;
+    animation: handwriting 0.5s steps(30) infinite;
+}
+
+
+@font-face {
+    font-family: 'YourChosenFont'; /* Give your font a name */
+    src: url('path/to/your/font.woff2') format('woff2'); /* Replace 'path/to/your/font.woff2' with the actual path to your font file */
+    /* You can include additional src declarations for different font formats (e.g., woff, ttf) for better browser compatibility */
+}
+
+.handwritten {
+    font-family: 'YourChosenFont', cursive; /* Use the 'YourChosenFont' font, fallback to cursive if not available */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: handwriting 4s steps(30) infinite;
 }
