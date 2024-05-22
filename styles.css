@@ -91,5 +91,5 @@ h1 {
     font-family: 'YourChosenFont', cursive; /* Use the 'YourChosenFont' font, fallback to cursive if not available */
     overflow: hidden;
     white-space: nowrap;
-    animation: handwriting 1s steps(30) infinite;
+    animation: handwriting 3s steps(30) infinite;
 }
