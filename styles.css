@@ -30,7 +30,7 @@ h1 {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 25px; /* Adjust border-radius to make buttons rounded */
-    margin-top: -20px;
+    margin-top: 8px;
 }
 
 .no-btn {
@@ -45,7 +45,7 @@ h1 {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 25px; /* Adjust border-radius to make buttons rounded */
-    margin-top: -20px;
+    margin-top: 8px;
 }
 
 .success-body {
