@@ -32,6 +32,7 @@ h1 {
     white-space: nowrap;
     animation: handwriting 0.5s steps(30) infinite;
     color: black; /* Set text color to black */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for a fancy effect */
 }
 
 .yes-btn {
@@ -61,7 +62,6 @@ h1 {
     cursor: pointer;
     border-radius: 8px;
 }
-
 
 .success-body {
     background-color: #f0f; 
