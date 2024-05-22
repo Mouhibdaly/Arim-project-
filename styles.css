@@ -54,3 +54,20 @@ h1 {
     background-color: #0ff; 
     color: white;
 }
+
+
+@keyframes handwriting {
+    0% {
+        content: '';
+    }
+    100% {
+        content: 'A';
+    }
+}
+
+.handwritten::after {
+    content: 'Are you Rimy?';
+    display: inline-block;
+    overflow: hidden;
+    animation: handwriting 4s steps(16) infinite;
+}
