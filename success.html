@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <style>
+        .message {
+            display: none;
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="message"></div>
+
+    <script>
+        var messages = [
+            "Good luck fel bac habibi",
+            "I will always be with you, baby",
+            "Believe in yourself",
+            "You are a special one",
+            "Ya cherira"
+        ];
+        
+        var currentIndex = 0;
+
+        function showMessage() {
+            var messageDiv = document.querySelector('.message');
+            messageDiv.textContent = messages[currentIndex];
+            messageDiv.style.display = 'block';
+            
+            setTimeout(function() {
+                messageDiv.style.display = 'none';
+                currentIndex = (currentIndex + 1) % messages.length;
+                setTimeout(showMessage, 500); // Short delay before showing the next message
+            }, 3000); // Display each message for 3 seconds
+        }
+
+        setTimeout(showMessage, 3000); // Show the first message after 3 seconds
+    </script>
+</body>
+</html>
