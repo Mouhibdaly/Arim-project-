@@ -34,8 +34,8 @@ h1 {
     color: black; /* Set text color to black */
 }
 
-.yes-btn {
-    background-color: #4CAF50; 
+.yes-btn, .no-btn {
+    background-color: #4CAF50; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -45,21 +45,7 @@ h1 {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 8px;
-}
-
-.no-btn {
-    background-color: #f44336; /* Red */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
+    border-radius: 20px; /* Make the buttons rounded */
 }
 
 .success-body {
@@ -92,4 +78,19 @@ h1 {
     overflow: hidden;
     white-space: nowrap;
     animation: handwriting 3s steps(30) infinite;
+}
+
+.message {
+    font-size: 1.5em; /* Increase font size for the messages */
+    color: black; /* Set text color to black */
+    animation: fadeText 3s infinite; /* Apply animation to fade in and out */
+}
+
+@keyframes fadeText {
+    0%, 100% {
+        opacity: 0; /* Make the text invisible at the start and end */
+    }
+    10%, 90% {
+        opacity: 1; /* Make the text visible during the transition */
+    }
 }
