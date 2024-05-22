@@ -29,7 +29,8 @@ h1 {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: -20px;
+    border-radius: 25px; /* Adjust border-radius to make buttons rounded */
+    margin-top: -20px;
 }
 
 .no-btn {
@@ -43,7 +44,8 @@ h1 {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: -20px;
+    border-radius: 25px; /* Adjust border-radius to make buttons rounded */
+    margin-top: -20px;
 }
 
 .success-body {
@@ -82,5 +84,5 @@ h1 {
     font-family: 'YourChosenFont', cursive; /* Use the 'YourChosenFont' font, fallback to cursive if not available */
     overflow: hidden;
     white-space: nowrap;
-    animation: handwriting 1s steps(30) infinite;
+    animation: handwriting 2s steps(30) infinite;
 }
