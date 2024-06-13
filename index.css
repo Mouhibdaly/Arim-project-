@@ -1,11 +1,11 @@
-/* Basic reset */
+/* Basic reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -16,7 +16,7 @@ body {
     color: #fff;
 }
 
-/* Container styling */
+
 .container {
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
@@ -25,20 +25,20 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Header styling */
+
 h1 {
     margin-bottom: 2rem;
     font-size: 2.5rem;
 }
 
-/* Button container styling */
+
 .button-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-/* Button styling */
+
 .button {
     padding: 1rem 2rem;
     border: none;
@@ -68,14 +68,14 @@ h1 {
 
 
 
-/* Basic reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -86,7 +86,7 @@ body {
     color: #333;
 }
 
-/* Container styling */
+
 .container {
     text-align: center;
     background-color: #fff;
@@ -97,21 +97,21 @@ body {
     max-width: 400px;
 }
 
-/* Header styling */
+
 h1 {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     color: #333;
 }
 
-/* Message styling */
+
 .message {
     display: none;
     font-size: 1.2rem;
     color: #666;
 }
 
-/* Responsive Design */
+
 @media (min-width: 600px) {
     .container {
         padding: 3rem;
@@ -124,4 +124,4 @@ h1 {
     .message {
         font-size: 1.5rem;
     }
-}
+} */

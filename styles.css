@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+.box {
+    border: 2px solid #ccc; /* Add border */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border-radius to make the box rounded */
+    background-color: white; /* Set background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.container {
+    text-align: center;
+    margin-top: -20px; /* Lift the box up */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.handwritten {
+    font-size: 2em; /* Increase font size for the question */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: handwriting 0.5s steps(30) infinite;
+    color: black; /* Set text color to black */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for a fancy effect */
+}
+
+.yes-btn {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.no-btn {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.success-body {
+    background-color: #f0f; 
+    color: white; 
+}
+
+.index-body {
+    background-color: #0ff; 
+    color: white;
+}
+
+@keyframes handwriting {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: 'YourChosenFont'; /* Give your font a name */
+    src: url('path/to/your/font.woff2') format('woff2'); /* Replace 'path/to/your/font.woff2' with the actual path to your font file */
+    /* You can include additional src declarations for different font formats (e.g., woff, ttf) for better browser compatibility */
+}
+
+.handwritten {
+    font-family: 'YourChosenFont', cursive; /* Use the 'YourChosenFont' font, fallback to cursive if not available */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: handwriting 3s steps(30) infinite;
+}
+
+.message {
+    font-size: 1.5em; /* Increase font size for the messages */
+    color: black; /* Set text color to black */
+    animation: fadeText 3s infinite; /* Apply animation to fade in and out */
+}
+
+@keyframes fadeText {
+    0%, 100% {
+        opacity: 0; /* Make the text invisible at the start and end */
+    }
+    10%, 90% {
+        opacity: 1; /* Make the text visible during the transition */
+    }
+}
